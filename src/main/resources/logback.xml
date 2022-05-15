@@ -16,11 +16,8 @@
         </encoder>
         <file>${LOG_PATH}/server.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_HOME}/server.%d{yyyyMMdd}.%i.log</fileNamePattern>
+            <fileNamePattern>${LOG_HOME}/server.%d{yyyyMMdd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
-            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-                <maxFileSize>64 MB</maxFileSize>
-            </timeBasedFileNamingAndTriggeringPolicy>
         </rollingPolicy>
 
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
