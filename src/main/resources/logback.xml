@@ -14,7 +14,7 @@
             </pattern>
             <charset>UTF-8</charset>
         </encoder>
-        <File>${LOG_HOME}/server.log</File>
+        <file>${LOG_HOME}/server.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${LOG_HOME}/server.%d{yyyyMMdd}.log</fileNamePattern>
             <maxHistory>30</maxHistory>
