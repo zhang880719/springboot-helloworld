@@ -14,7 +14,6 @@ public class HelloWorldController {
 
 	@RequestMapping("/hello")
 	public String showMsg(){
-
 	    String str="日志编码utf-8";
 		log.info("测试日志:{}",str);
 		return this.msg;
